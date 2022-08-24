@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeComponent Matches DOM Snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="bg-[#fff] h-[100vh] w-full "
+      >
+        <div
+          class="flex gap-5 p-5 h-full justify-around "
+        >
+          <div
+            class=" h-[full] mt-[2rem] w-[50%] p-5"
+          >
+            <h1
+              class="text-6xl text-[#1b5a5a] font-bold"
+            >
+              Welcome to Teams Veterinary Clinic
+            </h1>
+            <p
+              class="text-xl tracking-wide mt-[2rem]"
+            >
+              Teams Veterinary Clinic is a full-service animal hospital and welcomes both emergency treatment cases as well as pet patients in need of routine medical, surgical, and dental care.
+            </p>
+            <p
+              class="text-xl tracking-wide mt-[2rem]"
+            >
+              Beyond first-rate pet care, we make our clinic comfortable, kid-friendly, and calm, so your pet can relax in the waiting room and look forward to meeting our veterinarian.
+            </p>
+          </div>
+          <div
+            class="w-[45%] h-full flex items-end"
+          >
+            <p>
+              test
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full h-[30%] flex justify-center py-5"
+        >
+          <div
+            class="flex justify-evenly items-center h-full bg-[#bfbfbf] w-[80%] rounded-3xl"
+          >
+            <div
+              class="w-[25%] h-[65%] rounded-3xl bg-white"
+            >
+              <h2>
+                Consultation
+              </h2>
+            </div>
+            <div
+              class="w-[25%] h-[65%] rounded-3xl bg-white"
+            >
+              <h2>
+                Grooming
+              </h2>
+            </div>
+            <div
+              class="w-[25%] h-[65%] rounded-3xl bg-white"
+            >
+              <h2>
+                Online Shop
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="bg-[#fff] h-[100vh] w-full "
+    >
+      <div
+        class="flex gap-5 p-5 h-full justify-around "
+      >
+        <div
+          class=" h-[full] mt-[2rem] w-[50%] p-5"
+        >
+          <h1
+            class="text-6xl text-[#1b5a5a] font-bold"
+          >
+            Welcome to Teams Veterinary Clinic
+          </h1>
+          <p
+            class="text-xl tracking-wide mt-[2rem]"
+          >
+            Teams Veterinary Clinic is a full-service animal hospital and welcomes both emergency treatment cases as well as pet patients in need of routine medical, surgical, and dental care.
+          </p>
+          <p
+            class="text-xl tracking-wide mt-[2rem]"
+          >
+            Beyond first-rate pet care, we make our clinic comfortable, kid-friendly, and calm, so your pet can relax in the waiting room and look forward to meeting our veterinarian.
+          </p>
+        </div>
+        <div
+          class="w-[45%] h-full flex items-end"
+        >
+          <p>
+            test
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-full h-[30%] flex justify-center py-5"
+      >
+        <div
+          class="flex justify-evenly items-center h-full bg-[#bfbfbf] w-[80%] rounded-3xl"
+        >
+          <div
+            class="w-[25%] h-[65%] rounded-3xl bg-white"
+          >
+            <h2>
+              Consultation
+            </h2>
+          </div>
+          <div
+            class="w-[25%] h-[65%] rounded-3xl bg-white"
+          >
+            <h2>
+              Grooming
+            </h2>
+          </div>
+          <div
+            class="w-[25%] h-[65%] rounded-3xl bg-white"
+          >
+            <h2>
+              Online Shop
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

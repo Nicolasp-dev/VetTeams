@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form Matches DOM Snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="w-full col-span-2 mb-[5rem] mt-[100px] md:col-start-1 md:col-end-3 flex justify-center items-center row-start-1 row-end-3"
+      >
+        <div
+          class="w-[70%] flex flex-col gap-y-6 "
+        >
+          <h1
+            class="text-4xl text-[#1F6B6B] font-semibold text-center"
+          >
+            Make an appointment
+          </h1>
+          <p
+            class="text-justify"
+          >
+            In this section you can request an appointment for a general medical consultation, specialized medical consultation, vaccinations and administrative procedures.
+            <br />
+            <br />
+            It is not possible to request appointments online for some activities (diagnostic tests, minor surgery, etc.) that require a prior indication from a professional or special preparation conditions.
+          </p>
+          <form
+            class="text-center relative "
+            data-testid="form-element"
+          >
+            <fieldset
+              class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4"
+            >
+              <div>
+                <select
+                  class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 max-h-[45px]"
+                  name="service"
+                  placeholder="Service"
+                  type="number"
+                >
+                  <option>
+                    Medical Service
+                  </option>
+                  <option>
+                    Grooming Service
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input
+                  class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1"
+                  name="date"
+                  placeholder="Date"
+                  type="date"
+                />
+              </div>
+            </fieldset>
+            <textarea
+              class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-9 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 mb-5"
+              cols="10"
+              name="textarea"
+              placeholder="Some description"
+              rows="6"
+            />
+            <button
+              class="px-2 rounded-3xl h-[3rem] w-[8rem] bg-[#1F6B6B] text-white right-3 absolute tracking-wider"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="w-full col-span-2 mb-[5rem] mt-[100px] md:col-start-1 md:col-end-3 flex justify-center items-center row-start-1 row-end-3"
+    >
+      <div
+        class="w-[70%] flex flex-col gap-y-6 "
+      >
+        <h1
+          class="text-4xl text-[#1F6B6B] font-semibold text-center"
+        >
+          Make an appointment
+        </h1>
+        <p
+          class="text-justify"
+        >
+          In this section you can request an appointment for a general medical consultation, specialized medical consultation, vaccinations and administrative procedures.
+          <br />
+          <br />
+          It is not possible to request appointments online for some activities (diagnostic tests, minor surgery, etc.) that require a prior indication from a professional or special preparation conditions.
+        </p>
+        <form
+          class="text-center relative "
+          data-testid="form-element"
+        >
+          <fieldset
+            class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4"
+          >
+            <div>
+              <select
+                class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 max-h-[45px]"
+                name="service"
+                placeholder="Service"
+                type="number"
+              >
+                <option>
+                  Medical Service
+                </option>
+                <option>
+                  Grooming Service
+                </option>
+              </select>
+            </div>
+            <div>
+              <input
+                class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1"
+                name="date"
+                placeholder="Date"
+                type="date"
+              />
+            </div>
+          </fieldset>
+          <textarea
+            class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-9 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 mb-5"
+            cols="10"
+            name="textarea"
+            placeholder="Some description"
+            rows="6"
+          />
+          <button
+            class="px-2 rounded-3xl h-[3rem] w-[8rem] bg-[#1F6B6B] text-white right-3 absolute tracking-wider"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

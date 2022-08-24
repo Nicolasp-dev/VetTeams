@@ -1,0 +1,472 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppointmentForm Matches DOM Snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="w-full grid grid-cols-1 md:grid-cols-3 grid-rows-[50vh_minmax(50vh,_1fr)]"
+      >
+        <div
+          class="w-full col-span-2 mb-[5rem] mt-[100px] md:col-start-1 md:col-end-3 flex justify-center items-center row-start-1 row-end-3"
+        >
+          <div
+            class="w-[70%] flex flex-col gap-y-6 "
+          >
+            <h1
+              class="text-4xl text-[#1F6B6B] font-semibold text-center"
+            >
+              Make an appointment
+            </h1>
+            <p
+              class="text-justify"
+            >
+              In this section you can request an appointment for a general medical consultation, specialized medical consultation, vaccinations and administrative procedures.
+              <br />
+              <br />
+              It is not possible to request appointments online for some activities (diagnostic tests, minor surgery, etc.) that require a prior indication from a professional or special preparation conditions.
+            </p>
+            <form
+              class="text-center relative "
+              data-testid="form-element"
+            >
+              <fieldset
+                class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4"
+              >
+                <div>
+                  <select
+                    class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 max-h-[45px]"
+                    name="service"
+                    placeholder="Service"
+                    type="number"
+                  >
+                    <option>
+                      Medical Service
+                    </option>
+                    <option>
+                      Grooming Service
+                    </option>
+                  </select>
+                </div>
+                <div>
+                  <input
+                    class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1"
+                    name="date"
+                    placeholder="Date"
+                    type="date"
+                  />
+                </div>
+              </fieldset>
+              <textarea
+                class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-9 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 mb-5"
+                cols="10"
+                name="textarea"
+                placeholder="Some description"
+                rows="6"
+              />
+              <button
+                class="px-2 rounded-3xl h-[3rem] w-[8rem] bg-[#1F6B6B] text-white right-3 absolute tracking-wider"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class=" bg-[#1F6B6B] flex flex-col justify-between items-center py-10 md:col-start-3 md:col-end-4 row-start-1 row-end-3 "
+        >
+          <div
+            class=" flex flex-col items-center mt-10 p-8"
+          >
+            <h1
+              class="text-white text-3xl font-semibold mb-5"
+            >
+              Quick Contact
+            </h1>
+            <ul
+              class="text-white "
+            >
+              <li
+                class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+              >
+                <svg
+                  fill="currentColor"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                <p>
+                  +57 (000) 000-000
+                </p>
+              </li>
+              <li
+                class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+              >
+                <svg
+                  fill="currentColor"
+                  height="22"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M21.29 13.9L18 12l3.29-1.9c.48-.28.64-.89.37-1.37l-2-3.46a1.01 1.01 0 00-1.37-.37L15 6.8V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v3.8L5.71 4.9a1.01 1.01 0 00-1.37.37l-2 3.46c-.28.48-.11 1.09.37 1.37L6 12l-3.29 1.9c-.48.28-.64.89-.37 1.37l2 3.46c.28.48.89.64 1.37.37L9 17.2V21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-3.8l3.29 1.9c.48.28 1.09.11 1.37-.37l2-3.46c.28-.48.11-1.09-.37-1.37zm-2.86 2.97l-4.68-2.7c-.33-.2-.75.04-.75.43V20h-2v-5.4c0-.38-.42-.63-.75-.43l-4.68 2.7-1-1.73 4.68-2.7c.33-.19.33-.67 0-.87l-4.68-2.7 1-1.73 4.68 2.7c.33.19.75-.05.75-.44V4h2v5.4c0 .38.42.63.75.43l4.68-2.7 1 1.73-4.68 2.7c-.33.19-.33.67 0 .87l4.68 2.7-1 1.74z"
+                  />
+                </svg>
+                <p>
+                  Contact Vet-Teams
+                </p>
+              </li>
+              <li
+                class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+              >
+                <svg
+                  fill="currentColor"
+                  height="22"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  width="22"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <path
+                      d="M0 0H24V24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 13c1.657 0 3 1.343 3 3 0 .85-.353 1.616-.92 2.162L12.17 20H15v2H9v-1.724l3.693-3.555c.19-.183.307-.438.307-.721 0-.552-.448-1-1-1s-1 .448-1 1H9c0-1.657 1.343-3 3-3zm6 0v4h2v-4h2v9h-2v-3h-4v-6h2zM4 12c0 2.527 1.171 4.78 3 6.246v2.416C4.011 18.933 2 15.702 2 12h2zm8-10c5.185 0 9.449 3.947 9.95 9h-2.012C19.446 7.054 16.08 4 12 4 9.536 4 7.332 5.114 5.865 6.865L8 9H2V3l2.447 2.446C6.28 3.336 8.984 2 12 2z"
+                    />
+                  </g>
+                </svg>
+                <p>
+                  Open 24/7
+                </p>
+              </li>
+              <li
+                class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+              >
+                <svg
+                  baseProfile="tiny"
+                  fill="currentColor"
+                  height="25"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  version="1.2"
+                  viewBox="0 0 24 24"
+                  width="25"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.657 5.304c-3.124-3.073-8.189-3.073-11.313 0-3.124 3.074-3.124 8.057 0 11.13l5.656 5.565 5.657-5.565c3.124-3.073 3.124-8.056 0-11.13zm-5.657 8.195c-.668 0-1.295-.26-1.768-.732-.975-.975-.975-2.561 0-3.536.472-.472 1.1-.732 1.768-.732s1.296.26 1.768.732c.975.975.975 2.562 0 3.536-.472.472-1.1.732-1.768.732z"
+                  />
+                </svg>
+                <p>
+                  Some address - 123
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="max-w-md"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="w-full grid grid-cols-1 md:grid-cols-3 grid-rows-[50vh_minmax(50vh,_1fr)]"
+    >
+      <div
+        class="w-full col-span-2 mb-[5rem] mt-[100px] md:col-start-1 md:col-end-3 flex justify-center items-center row-start-1 row-end-3"
+      >
+        <div
+          class="w-[70%] flex flex-col gap-y-6 "
+        >
+          <h1
+            class="text-4xl text-[#1F6B6B] font-semibold text-center"
+          >
+            Make an appointment
+          </h1>
+          <p
+            class="text-justify"
+          >
+            In this section you can request an appointment for a general medical consultation, specialized medical consultation, vaccinations and administrative procedures.
+            <br />
+            <br />
+            It is not possible to request appointments online for some activities (diagnostic tests, minor surgery, etc.) that require a prior indication from a professional or special preparation conditions.
+          </p>
+          <form
+            class="text-center relative "
+            data-testid="form-element"
+          >
+            <fieldset
+              class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4"
+            >
+              <div>
+                <select
+                  class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 max-h-[45px]"
+                  name="service"
+                  placeholder="Service"
+                  type="number"
+                >
+                  <option>
+                    Medical Service
+                  </option>
+                  <option>
+                    Grooming Service
+                  </option>
+                </select>
+              </div>
+              <div>
+                <input
+                  class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-2 sm:pl-4 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1"
+                  name="date"
+                  placeholder="Date"
+                  type="date"
+                />
+              </div>
+            </fieldset>
+            <textarea
+              class="placeholder:text-[#1F6B6B] block bg-white w-full border-2 border-[#1F6B6B] rounded-2xl py-2 pl-9 pr-3 focus:outline-none focus:border-[#1F6B6B] focus:ring-[#1F6B6B] focus:ring-1 mb-5"
+              cols="10"
+              name="textarea"
+              placeholder="Some description"
+              rows="6"
+            />
+            <button
+              class="px-2 rounded-3xl h-[3rem] w-[8rem] bg-[#1F6B6B] text-white right-3 absolute tracking-wider"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class=" bg-[#1F6B6B] flex flex-col justify-between items-center py-10 md:col-start-3 md:col-end-4 row-start-1 row-end-3 "
+      >
+        <div
+          class=" flex flex-col items-center mt-10 p-8"
+        >
+          <h1
+            class="text-white text-3xl font-semibold mb-5"
+          >
+            Quick Contact
+          </h1>
+          <ul
+            class="text-white "
+          >
+            <li
+              class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+            >
+              <svg
+                fill="currentColor"
+                height="20"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                />
+              </svg>
+              <p>
+                +57 (000) 000-000
+              </p>
+            </li>
+            <li
+              class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+            >
+              <svg
+                fill="currentColor"
+                height="22"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M21.29 13.9L18 12l3.29-1.9c.48-.28.64-.89.37-1.37l-2-3.46a1.01 1.01 0 00-1.37-.37L15 6.8V3c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v3.8L5.71 4.9a1.01 1.01 0 00-1.37.37l-2 3.46c-.28.48-.11 1.09.37 1.37L6 12l-3.29 1.9c-.48.28-.64.89-.37 1.37l2 3.46c.28.48.89.64 1.37.37L9 17.2V21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-3.8l3.29 1.9c.48.28 1.09.11 1.37-.37l2-3.46c.28-.48.11-1.09-.37-1.37zm-2.86 2.97l-4.68-2.7c-.33-.2-.75.04-.75.43V20h-2v-5.4c0-.38-.42-.63-.75-.43l-4.68 2.7-1-1.73 4.68-2.7c.33-.19.33-.67 0-.87l-4.68-2.7 1-1.73 4.68 2.7c.33.19.75-.05.75-.44V4h2v5.4c0 .38.42.63.75.43l4.68-2.7 1 1.73-4.68 2.7c-.33.19-.33.67 0 .87l4.68 2.7-1 1.74z"
+                />
+              </svg>
+              <p>
+                Contact Vet-Teams
+              </p>
+            </li>
+            <li
+              class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+            >
+              <svg
+                fill="currentColor"
+                height="22"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="22"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0H24V24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 13c1.657 0 3 1.343 3 3 0 .85-.353 1.616-.92 2.162L12.17 20H15v2H9v-1.724l3.693-3.555c.19-.183.307-.438.307-.721 0-.552-.448-1-1-1s-1 .448-1 1H9c0-1.657 1.343-3 3-3zm6 0v4h2v-4h2v9h-2v-3h-4v-6h2zM4 12c0 2.527 1.171 4.78 3 6.246v2.416C4.011 18.933 2 15.702 2 12h2zm8-10c5.185 0 9.449 3.947 9.95 9h-2.012C19.446 7.054 16.08 4 12 4 9.536 4 7.332 5.114 5.865 6.865L8 9H2V3l2.447 2.446C6.28 3.336 8.984 2 12 2z"
+                  />
+                </g>
+              </svg>
+              <p>
+                Open 24/7
+              </p>
+            </li>
+            <li
+              class="flex gap-5 md:flex-col md:items-start lg:flex-row items-center mb-3 text-lg"
+            >
+              <svg
+                baseProfile="tiny"
+                fill="currentColor"
+                height="25"
+                stroke="currentColor"
+                stroke-width="0"
+                version="1.2"
+                viewBox="0 0 24 24"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.657 5.304c-3.124-3.073-8.189-3.073-11.313 0-3.124 3.074-3.124 8.057 0 11.13l5.656 5.565 5.657-5.565c3.124-3.073 3.124-8.056 0-11.13zm-5.657 8.195c-.668 0-1.295-.26-1.768-.732-.975-.975-.975-2.561 0-3.536.472-.472 1.1-.732 1.768-.732s1.296.26 1.768.732c.975.975.975 2.562 0 3.536-.472.472-1.1.732-1.768.732z"
+                />
+              </svg>
+              <p>
+                Some address - 123
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="max-w-md"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
