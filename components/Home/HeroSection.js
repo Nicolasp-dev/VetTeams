@@ -72,7 +72,7 @@ const HeroSection = () => {
         >
           <Link href="/login">
             <button className=" bg-dark-green text-white tracking-wider w-[6rem] h-[2rem] rounded-md hover:scale-110 duration-300 text-xs sm:w-[7rem] sm:h-[2.5rem] xl:w-[10rem] xl:h-[3rem] xl:text-lg 2xl:w-[15rem] 2xl:h-[3.2rem] 2xl:text-xl ">
-              Login
+              Explore
             </button>
           </Link>
         </motion.div>
