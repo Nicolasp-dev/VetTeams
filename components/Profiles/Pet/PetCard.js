@@ -33,9 +33,9 @@ const PetCard = ({ pet }) => {
           <div className="flex gap-2">
             <AiFillDelete
               className="cursor-pointer text-white sm:text-[1.2rem] hover:scale-[1.1] drop-shadow-lg shadow-black "
-              onClick={() => deletePetHandler(pet.id, pet.name)}
+              onClick={() => deletePetHandler(pet._id, pet.name)}
             />
-            <Link href={`/petProfile/${pet.id}`} passHref>
+            <Link href={`/pets/${pet._id}`} passHref>
               <RiFolderOpenFill className="cursor-pointer text-white sm:text-[1.2rem] hover:scale-[1.1] drop-shadow-lg shadow-black " />
             </Link>
           </div>
@@ -60,10 +60,8 @@ const PetCard = ({ pet }) => {
             <p>{pet.breed}</p>
           </div>
           <div className="text-sm sm:text-md lg:text-lg text-primary-green flex justify-between ">
-            <p className="font-semibold drop-shadow-lg shadow-black">
-              Birthday:
-            </p>
-            <p>{pet.birthday}</p>
+            <p className="font-semibold drop-shadow-lg shadow-black">Age:</p>
+            <p>{pet.age} years</p>
           </div>
         </div>
       </div>

@@ -19,19 +19,19 @@ axios.interceptors.request.use(
   }
 );
 
-export const fetchAll = async (data) => {
+export const fetchAll = async (path) => {
   try {
-    const response = await api.get(data);
-    return response.data;
+    const response = await api.get(path);
+    return response.data.data;
   } catch (error) {
-    console.error("An error occur during GET /users request", error.response);
+    console.error("An error occur during GET /users request", error.message);
   }
 };
 
 export const fetchById = async (path, id) => {
   try {
     const response = await api.get(`${path}/${id}`);
-    return response.data;
+    return response.data.data;
   } catch (error) {
     console.error.apply(error.message);
   }
@@ -40,7 +40,7 @@ export const fetchById = async (path, id) => {
 export const createData = async (path, newData) => {
   try {
     const response = await api.post(`${path}`, newData);
-    return response.data;
+    return response.data.data;
   } catch (error) {
     console.error(error, error.message);
   }
@@ -49,7 +49,7 @@ export const createData = async (path, newData) => {
 export const updateData = async (path, newData) => {
   try {
     const response = await api.put(`${path}/${newData.id}`, newData);
-    return response.data;
+    return response.data.data;
   } catch (error) {
     console.error(error, error.message);
   }
@@ -57,8 +57,8 @@ export const updateData = async (path, newData) => {
 
 export const deleteDataById = async (path, id) => {
   try {
-    const response = api.delete(`${path}/${id}`);
-    return response.data;
+    const response = await api.delete(`${path}/${id}`);
+      return response.data.data;
   } catch (error) {
     console.log(error, error.message);
   }

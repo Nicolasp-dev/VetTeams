@@ -15,11 +15,11 @@ const UpdatePetForm = ({ toUpdatePet, toggleModal }) => {
     setValue,
   } = useForm();
 
-  const id = toUpdatePet.id;
+  const id = toUpdatePet._id;
 
   useEffect(() => {
     setValue("name", toUpdatePet.name);
-    setValue("birthday", toUpdatePet.birthday);
+    setValue("age", toUpdatePet.age);
     setValue("microchip", toUpdatePet.microchip);
     setValue("species", toUpdatePet.species);
     setValue("breed", toUpdatePet.breed);
@@ -31,6 +31,7 @@ const UpdatePetForm = ({ toUpdatePet, toggleModal }) => {
   const onSubmitHandler = async (values) => {
     updatePetHandler({ ...values, id });
     feedbackAlert(`${values.name} data`, "was successfully updated", "success");
+    toggleModal();
   };
 
   return (
@@ -90,15 +91,13 @@ const UpdatePetForm = ({ toUpdatePet, toggleModal }) => {
       <div>
         <input
           className="placeholder:text-mid-green block bg-transparent w-full border-2 border-mid-green rounded-md py-2 pl-2  sm:pl-4 pr-3  focus:outline-none focus:border-mid-green focus:ring-mid-green focus:ring-1"
-          type="date"
-          placeholder="Birthday"
-          {...register("birthday", {
+          type="number"
+          placeholder="Age"
+          {...register("age", {
             required: { value: true, message: "*Required field" },
           })}
         />
-        {errors.birthday && (
-          <ErrorPetsMsg errorMessage={errors.birthday?.message} />
-        )}
+        {errors.age && <ErrorPetsMsg errorMessage={errors.age?.message} />}
       </div>
       <div>
         <input
@@ -143,7 +142,6 @@ const UpdatePetForm = ({ toUpdatePet, toggleModal }) => {
         <button
           type="submit"
           className="absolute bottom-8 bg-dark-green text-white tracking-wider w-[85%] h-[3rem] rounded-md duration-100 hover:bg-gradient-to-t from-dark-green to-[#147e7e]"
-          onClick={toggleModal}
         >
           Update
         </button>

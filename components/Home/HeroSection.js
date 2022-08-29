@@ -70,13 +70,8 @@ const HeroSection = () => {
           variants={childContainerVariant}
           className="flex gap-5 2xl:mt-10"
         >
-          <Link href="/register">
-            <button className=" bg-dark-green text-white tracking-wider w-[6rem] h-[2rem] rounded-md hover:scale-110 duration-300 text-xs sm:w-[7rem] sm:h-[2.5rem] xl:w-[10rem] xl:h-[3rem] xl:text-lg 2xl:w-[15rem] 2xl:h-[3.2rem] 2xl:text-xl ">
-              Sign in
-            </button>
-          </Link>
           <Link href="/login">
-            <button className="bg-white text-dark-green font-medium tracking-wider w-[6rem] h-[2rem] rounded-md hover:scale-110 duration-300 text-xs sm:w-[7rem] sm:h-[2.5rem]  xl:w-[10rem] xl:h-[3rem] xl:text-lg  2xl:w-[15rem] 2xl:h-[3.2rem] 2xl:text-xl ">
+            <button className=" bg-dark-green text-white tracking-wider w-[6rem] h-[2rem] rounded-md hover:scale-110 duration-300 text-xs sm:w-[7rem] sm:h-[2.5rem] xl:w-[10rem] xl:h-[3rem] xl:text-lg 2xl:w-[15rem] 2xl:h-[3.2rem] 2xl:text-xl ">
               Login
             </button>
           </Link>

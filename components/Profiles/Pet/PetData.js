@@ -14,7 +14,7 @@ const PetData = ({ pet, toggleModal }) => {
   const photo = pet?.species === "Feline" ? CatPhoto : DogPhoto;
 
   return (
-    <div className=" h-[20rem] flex mx-5 sm:w-full sm:gap-5">
+    <div className=" h-[20rem] flex mx-5 sm:mx-0 sm:w-full sm:gap-5">
       {/* PET__IMAGE */}
       <div className="hidden sm:block w-[30%] h-full rounded-md relative overflow-hidden mr-5 drop-shadow-2xl">
         <Image
@@ -70,7 +70,7 @@ const PetData = ({ pet, toggleModal }) => {
           </div>
           <div className="flex text-sm sm:text-lg lg:text-xl justify-between border-b-[1px] border-dark-green xl:text-2xl xl:font-light drop-shadow-lg shadow-black">
             <p className="font-semibold pb-2">Age:</p>
-            <p>{pet.birthday} years</p>
+            <p>{pet.age} years</p>
           </div>
           <div className="flex text-sm sm:text-lg lg:text- justify-between border-b-[1px] border-dark-green xl:text-2xl xl:font-light drop-shadow-lg shadow-black">
             <p className="font-semibold pb-2">Status:</p>

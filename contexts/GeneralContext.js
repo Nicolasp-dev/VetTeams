@@ -131,10 +131,11 @@ const GeneralContextProvider = (props) => {
   };
 
   const addRecordHandler = async (recordData) => {
-    await createData("/records", recordData);
+    const response = await createData("/records", recordData);
+    console.log(response);
     dispatchGlobalAction({
       type: globalActionType.createRecord,
-      payload: recordData,
+      payload: response,
     });
   };
 
@@ -154,10 +155,10 @@ const GeneralContextProvider = (props) => {
     confirmDelete().then(async (result) => {
       if (result.isConfirmed) {
         feedbackAlert(`${name}`, `has been deleted.`, "success");
-        await deleteDataById("/pets", id);
+        const response = await deleteDataById("/pets", id);
         dispatchGlobalAction({
           type: globalActionType.removePet,
-          payload: id,
+          payload: response,
         });
       }
     });
@@ -167,10 +168,10 @@ const GeneralContextProvider = (props) => {
     confirmDelete().then(async (result) => {
       if (result.isConfirmed) {
         feedbackAlert(`Record ${record}`, `has been deleted.`, "success");
-        await deleteDataById("/records", id);
+        const response = await deleteDataById("/records", id);
         dispatchGlobalAction({
           type: globalActionType.removeRecord,
-          payload: id,
+          payload: response,
         });
       }
     });
@@ -200,10 +201,10 @@ const GeneralContextProvider = (props) => {
           `has been deleted.`,
           "success"
         );
-        await deleteDataById("/appointments", id);
+        const response = await deleteDataById("/appointments", id);
         dispatchGlobalAction({
           type: globalActionType.removerAppointment,
-          payload: id,
+          payload: response,
         });
       }
     });
@@ -269,7 +270,6 @@ const GeneralContextProvider = (props) => {
 
   const logout = async () => {
     try {
-      // const response = await api.post("/logout");
       Cookie.remove("token");
       const jwt = Cookie.get("token");
       if (!jwt) {

@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { jwtVerify } from "jose";
+// import { jwtVerify } from "jose";
 
 const middleware = async (request) => {
   const jwt = request.cookies.get("token");
@@ -26,7 +26,11 @@ const middleware = async (request) => {
 };
 
 export const config = {
-  matcher: ["/welcome", "/users/:path*", "/petProfile/:path*, /appointments, /"],
+  matcher: [
+    "/welcome",
+    "/users/:path*",
+    "/petProfile/:path*, /appointments, /",
+  ],
 };
 
 export default middleware;

@@ -45,19 +45,13 @@ const globalReducer = (state, action) => {
     case globalActionType.updatePetData:
       return { ...state, pet: { ...action.payload } };
     case globalActionType.removePet:
-      const updatedList = state.pets.filter(
-        (pets) => pets.id !== action.payload
-      );
-      return { ...state, pets: updatedList };
+      return { ...state, pets: action.payload };
     case globalActionType.getAllPetRecords:
       return { ...state, records: action.payload };
     case globalActionType.createRecord:
       return { ...state, records: [...state.records, { ...action.payload }] };
     case globalActionType.removeRecord:
-      const updatedRecords = state.records.filter(
-        (record) => record.id !== action.payload
-      );
-      return { ...state, records: updatedRecords };
+      return { ...state, records: action.payload };
     case globalActionType.getAllAppointments:
       return { ...state, appointments: action.payload };
     case globalActionType.createAppointment:
@@ -66,10 +60,7 @@ const globalReducer = (state, action) => {
         appointments: [...state.appointments, { ...action.payload }],
       };
     case globalActionType.removerAppointment:
-      const updatedAppointments = state.appointments.filter(
-        (appointment) => appointment.id !== action.payload
-      );
-      return { ...state, appointments: updatedAppointments };
+      return { ...state, appointments: action.payload };
     default:
       return defaultGlobalState;
   }

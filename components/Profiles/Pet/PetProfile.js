@@ -58,7 +58,7 @@ const PetProfile = () => {
           <PetData pet={pet} toggleModal={toggleModal} />
         </div>
 
-        <div className="sm:mt-5 col-start-1 col-end-13 px-2 sm:col-start-3 sm:col-end-12 row-start-6">
+        <div className="sm:mt-5 col-start-1 col-end-13 sm:col-start-3 sm:col-end-12 row-start-6">
           <PetTable records={records} />
         </div>
 

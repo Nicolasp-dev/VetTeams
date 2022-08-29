@@ -23,7 +23,6 @@ const RegisterForm = () => {
 
   const onSubmitHandler = (values) => {
     const newUserData = {
-      id: uuidv4(),
       ...values,
     };
     addUserHandler(newUserData);
@@ -94,8 +93,8 @@ const RegisterForm = () => {
             <option className="text-gray-600 text-sm block" value="" disabled>
               Select your option
             </option>
-            <option value={1}>Male</option>
-            <option value={2}>Female</option>
+            <option>Male</option>
+            <option>Female</option>
           </select>
           {errors.GenderId && (
             <ErrorFormMsg errorMessage={errors.GenderId?.message} />
@@ -133,7 +132,7 @@ const RegisterForm = () => {
           <input
             className="block w-full rounded-md py-2 pl-3 max-h-9 text-sm md:text-md bg-gray-200 placeholder:text-gray-600 placeholder:text-sm focus:outline-none focus:border-mid-green focus:ring-mid-green focus:ring-1 2xl:py-4  "
             autoComplete="off"
-            type="text"
+            type="number"
             placeholder="age"
             {...register("age", {
               required: { value: true, message: "*Required field" },
@@ -181,8 +180,8 @@ const RegisterForm = () => {
               required: { value: true, message: "*Required field" },
             })}
           />
-          {errors.passwordconfirm && (
-            <ErrorFormMsg errorMessage={errors.passwordconfirm?.message} />
+          {errors.confirmPassword && (
+            <ErrorFormMsg errorMessage={errors.confirmPassword?.message} />
           )}
         </div>
       </div>

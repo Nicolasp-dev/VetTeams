@@ -23,10 +23,8 @@ const PetsForm = ({ closeModal }) => {
 
   const onSubmitHandler = async (values) => {
     const request = {
-      id: uuidv4(),
       ...values,
     };
-    console.log(request);
     addPetHandler(request);
     closeModal();
     feedbackAlert(values.name, "has been registered.", "success");
@@ -89,15 +87,13 @@ const PetsForm = ({ closeModal }) => {
       <div>
         <input
           className="placeholder:text-mid-green block bg-transparent w-full border-2 border-mid-green rounded-md py-2 pl-2  sm:pl-4 pr-3  focus:outline-none focus:border-mid-green focus:ring-mid-green focus:ring-1"
-          type="date"
-          placeholder="Birthday"
-          {...register("birthday", {
+          type="number"
+          placeholder="Age"
+          {...register("age", {
             required: { value: true, message: "*Required field" },
           })}
         />
-        {errors.birthday && (
-          <ErrorPetsMsg errorMessage={errors.birthday?.message} />
-        )}
+        {errors.age && <ErrorPetsMsg errorMessage={errors.age?.message} />}
       </div>
       <div>
         <input

@@ -12,6 +12,7 @@ import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
 // Components
 import PathCategory from "./PathCategory";
+import { useAuth } from "../../contexts/AuthCtx";
 
 // --------------------------------------------------------------- //
 
@@ -19,11 +20,12 @@ function Navigation() {
   const { logout } = useContext(GeneralContext);
   const [showSidebar, setShowSidebar] = useState(false);
   const [showMobileIcon, setShowMobileIcon] = useState(false);
+  const { fireLogout } = useAuth();
 
   const showSidebarHandler = () => setShowSidebar(!showSidebar);
   const showMobileMenuHandler = () => setShowMobileIcon(!showMobileIcon);
 
-  const width = showSidebar ? "sm:w-40" : "sm:w-16";
+  const width = showSidebar ? "sm:w-[11.5rem]" : "sm:w-16";
 
   return (
     <div
@@ -62,7 +64,7 @@ function Navigation() {
                 !showSidebar && "scale-0"
               } `}
             >
-              Pets
+              Users
             </h2>
           </PathCategory>
 
@@ -109,7 +111,7 @@ function Navigation() {
                 !showSidebar && "scale-0"
               } `}
             >
-              Dev's
+              Dev
             </h2>
           </PathCategory>
           <button
@@ -158,25 +160,16 @@ function Navigation() {
               className="w-[18rem] text-center pt-4 hover:border-b-[1px] hover:border-white cursor-pointer  h-[4rem] tracking-wider font-semibold"
               onClick={showMobileMenuHandler}
             >
-              <Link href="/">
-                <h2 className="text-2xl">Home</h2>
+              <Link href="/welcome">
+                <h2 className="text-2xl">Welcome</h2>
               </Link>
             </div>
             <div
               className="w-full text-center pt-4 hover:border-b-[1px] hover:border-white cursor-pointer  h-[4rem] tracking-wider font-semibold"
               onClick={showMobileMenuHandler}
             >
-              <Link href="/profile">
-                <h2 className="mx-auto text-2xl">Profile</h2>
-              </Link>
-            </div>
-
-            <div
-              className="w-full text-center pt-4 hover:border-b-[1px] hover:border-white cursor-pointer  h-[4rem] tracking-wider font-semibold"
-              onClick={showMobileMenuHandler}
-            >
-              <Link href="/profile">
-                <h2 className="mx-auto text-2xl">Pets</h2>
+              <Link href="/users">
+                <h2 className="mx-auto text-2xl">Users</h2>
               </Link>
             </div>
 
@@ -185,7 +178,16 @@ function Navigation() {
               onClick={showMobileMenuHandler}
             >
               <Link href="/appointments">
-                <h2 className="text-2xl">Schedule</h2>
+                <h2 className="mx-auto text-2xl">Schedule</h2>
+              </Link>
+            </div>
+
+            <div
+              className="w-full text-center pt-4 hover:border-b-[1px] hover:border-white cursor-pointer  h-[4rem] tracking-wider font-semibold"
+              onClick={showMobileMenuHandler}
+            >
+              <Link href="/appointmentsList">
+                <h2 className="text-2xl">Sc. List</h2>
               </Link>
             </div>
             <div
@@ -197,11 +199,21 @@ function Navigation() {
               </Link>
             </div>
             <div
+              className="w-full text-center pt-4 hover:border-b-[1px] hover:border-white cursor-pointer  h-[4rem] tracking-wider font-semibold"
+              onClick={showMobileMenuHandler}
+            >
+              <Link href="/developers">
+                <h2 className="text-2xl">Dev</h2>
+              </Link>
+            </div>
+            <div
               className="w-full  text-center pt-4 hover:border-b-[1px] hover:border-white cursor-pointer  h-[4rem] tracking-wider font-semibold"
               onClick={showMobileMenuHandler}
             >
               <Link href="/">
-                <h2 className="text-2xl">Logout</h2>
+                <h2 className="text-2xl" onClick={logout}>
+                  Logout
+                </h2>
               </Link>
             </div>
           </div>

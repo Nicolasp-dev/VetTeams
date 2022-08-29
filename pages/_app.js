@@ -1,14 +1,17 @@
 import "../styles/globals.css";
 import GeneralContextProvider from "../contexts/GeneralContext";
+import { AuthProvider } from "../contexts/AuthCtx";
 import Layout from "../components/Layout/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <GeneralContextProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </GeneralContextProvider>
+    <AuthProvider>
+      <GeneralContextProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </GeneralContextProvider>
+    </AuthProvider>
   );
 }
 

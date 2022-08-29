@@ -18,7 +18,7 @@ const UpdateUserForm = ({ toUpdateUser, toggleModal }) => {
     formState: { errors },
     setValue,
   } = useForm();
-  const id = toUpdateUser.id;
+  const id = toUpdateUser._id;
 
   useEffect(() => {
     setValue("name", toUpdateUser.name);

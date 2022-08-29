@@ -14,7 +14,7 @@ const NotFound = () => {
           <h1 className="text-3xl  md:text-4xl text-center font-bold text-[#565656]">
             Uh oh we have a problem{" "}
           </h1>
-          <Link href="/">
+          <Link href="/welcome">
             <button className="bg-[#154D4D] text-white py-3 px-6 rounded-md tracking-widest hover:bg-[#217a7a]  w-[12rem] sm:w-[16rem] sm:py-4 text-sm sm:text-md">
               GO HOME
             </button>

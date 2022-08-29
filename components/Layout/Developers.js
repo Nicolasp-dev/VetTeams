@@ -17,101 +17,46 @@ const Developers = () => {
 
       <Navigation />
       <main className="w-[100vw] h-[100vh] p-5 flex flex-col justify-center items-center">
-        <h2 className="text-primary-text text-6xl font-semibold">
-          Nuestro Equipo
+        <h2 className="text-primary-text mt-[100px] text-5xl sm:mt-0  sm:text-7xl font-semibold mb-10 ">
+          Developer
         </h2>
 
-        <p className="text-xl mt-5">
-          Somos un equipo apasionado que se divierte construyendo tus sueños
-        </p>
-
-        <div className="mt-10">
-          <div className="flex gap-10 flex-wrap justify-center">
-            <div class="w-[100vw] max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 ">
-              <div class="p-5 flex  gap-8 py-10 ">
-                <div className="w-[8rem] h-[8rem] relative rounded-full overflow-hidden">
-                  <Image
-                    src={NicolasImg}
-                    alt="nicolas Profile"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                  />
-                </div>
-                <div className="mt-3">
-                  <h5 class="mb-1 text-2xl font-medium text-primary-text dark:text-white">
-                    Nicolas Peña
-                  </h5>
-                  <span class="text-md text-gray-500 dark:text-gray-400">
-                    Frontend Developer
-                  </span>
-                  <div class="flex mt-4 space-x-3 md:mt-6">
-                    <a
-                      href="https://github.com/Nicolas-pc-dev"
-                      className="w-[5.5rem] inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-primary-text rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Git-Hub
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/nicolaspe%C3%B1a-dev/"
-                      className="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >
-                      LinkedIn
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-[100vw] max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-              <div class="p-5 flex gap-8 py-10 ">
-                <div className="w-[8rem] h-[8rem] relative rounded-full overflow-hidden">
-                  <Image
-                    src={GabrielImg}
-                    alt="Gabriel Profile"
-                    layout="fill"
-                    objectFit="cover"
-                    objectPosition="center"
-                  />
-                </div>
-                <div>
-                  <h5 class="mb-1 text-2xl font-medium text-primary-text dark:text-white">
-                    Gabriel Contreras
-                  </h5>
-                  <span class="text-md text-gray-500 dark:text-gray-400">
-                    Backend Developer
-                  </span>
-                  <div class="flex mt-4 space-x-3 md:mt-6">
-                    <a
-                      href="https://github.com/gabrielcontrerasv"
-                      class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-primary-text rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Git-Hub
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/gabrielcontrerasv3/"
-                      class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
-                    >
-                      LinkedIn
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <div className="w-[20rem] max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
+          <div className="h-[20rem] w-full relative">
+            <Image
+              src={NicolasImg}
+              alt="Nicolas Profile"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+          <div className="flex flex-col items-center pb-10">
+            <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
+              Nicolas Peña
+            </h5>
+            <span className="text-sm text-gray-500 dark:text-gray-400">
+              Frontend Developer
+            </span>
+            <div class="flex mt-4 space-x-3 md:mt-6">
+              <a
+                target="_blank"
+                href="https://github.com/gabrielcontrerasv"
+                class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-primary-text rounded-lg hover:bg-mid-green focus:ring-4 focus:outline-none focus:bg-mid-green dark:bg-mid-green dark:hover:bg-mid-green dark:focus:ring-bg-mid-green"
+              >
+                Git-Hub
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/gabrielcontrerasv3/"
+                class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://www.teaminternational.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by
-          <Image src={TeamsLogo} alt="Team Logo" width={72} height={60} />
-        </a>
-      </footer>
     </>
   );
 };

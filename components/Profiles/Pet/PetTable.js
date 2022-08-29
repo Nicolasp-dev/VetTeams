@@ -8,7 +8,7 @@ const petTable = ({ records }) => {
   return (
     <div className="flex flex-col mt-10">
       <div className="overflow-x-auto">
-        <div className="p-1.5 w-full inline-block align-middle">
+        <div className="p-5 sm:p-0 w-full inline-block align-middle">
           <div className="overflow-x-scroll sm:overflow-hidden border rounded-md">
             <table className="min-w-full divide-y divide-gray-200 ">
               <thead className="bg-[#166060]">
@@ -64,7 +64,9 @@ const petTable = ({ records }) => {
                       <td className="px-6 py-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                         <AiFillDelete
                           className="mx-auto cursor-pointer text-dark-green sm:text-[1.2rem] hover:scale-[1.1] drop-shadow-lg shadow-black "
-                          onClick={() => deleteRecordHandler(data.id, data.record)}
+                          onClick={() =>
+                            deleteRecordHandler(data._id, data.record)
+                          }
                         />
                       </td>
                     </tr>

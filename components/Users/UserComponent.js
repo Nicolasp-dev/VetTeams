@@ -94,7 +94,7 @@ const UserComponent = () => {
             <Paginate
               cardsPerPage={cardsPerPage}
               totalCards={
-                searchValue.length < 1 ? users.length : searchResults.length
+                searchValue.length < 1 ? users?.length : searchResults.length
               }
               paginate={paginate}
               currentPage={currentPage}
