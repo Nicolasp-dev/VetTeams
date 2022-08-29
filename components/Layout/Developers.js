@@ -36,19 +36,19 @@ const Developers = () => {
               Nicolas Peña
             </h5>
             <span className="text-sm text-gray-500 dark:text-gray-400">
-              Frontend Developer
+              Fullstack Developer
             </span>
             <div class="flex mt-4 space-x-3 md:mt-6">
               <a
                 target="_blank"
-                href="https://github.com/gabrielcontrerasv"
+                href="https://github.com/Nicolasp-dev"
                 class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-white bg-primary-text rounded-lg hover:bg-mid-green focus:ring-4 focus:outline-none focus:bg-mid-green dark:bg-mid-green dark:hover:bg-mid-green dark:focus:ring-bg-mid-green"
               >
                 Git-Hub
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/in/gabrielcontrerasv3/"
+                href="https://www.linkedin.com/in/nicolaspe%C3%B1a-dev/"
                 class="inline-flex items-center py-2 px-4 text-sm font-medium text-center text-gray-900 bg-white rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
               >
                 LinkedIn

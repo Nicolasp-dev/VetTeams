@@ -13,9 +13,9 @@ import RegisterBg from "../../public/assets/images/RegisterBg.webp";
 const Register = () => {
   return (
     <section className="h-[100vh] w-[100vw] sm:overflow-hidden flex font-inter">
-      <Link href="/">
+      <Link href="/welcome">
         <button className="absolute right-5 top-5 sm:top-10 sm:right-10 text-white z-50 cursor-pointer flex gap-2 hover:border-b-[1px]">
-          <p className="text-lg font-light">Home</p>
+          <p className="text-lg font-light">Welcome</p>
           <IoHomeSharp className="text-sm md:text-2xl" />
         </button>
       </Link>

@@ -1,10 +1,6 @@
 import mongoose from "mongoose";
-import dotenv from "dotenv";
 
-dotenv.config({ path: "../config.env" });
-
-const DB =
-  "mongodb+srv://Vet_Admin:a2lxpeNE8AZj4oCV@cluster0.vezg6vt.mongodb.net/VetTeams?retryWrites=true&w=majority";
+const DB = process.env.DATABASE;
 
 const dbConnection = async () => {
   await mongoose
