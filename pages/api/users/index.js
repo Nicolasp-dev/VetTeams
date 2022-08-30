@@ -1,10 +1,17 @@
 import User from "../../../models/User";
 import dbConnection from "../../../lib/dbConnection";
+import NextCors from "nextjs-cors";
 
 dbConnection();
 
 export default async function handler(req, res) {
   const { method } = req;
+
+  await NextCors(req, res, {
+    methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
+    origin: "*",
+    optionsSuccessStatus: 200,
+  });
 
   switch (method) {
     case "GET":

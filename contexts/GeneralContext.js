@@ -45,7 +45,7 @@ const GeneralContextProvider = (props) => {
 
   // Users Functions Handlers
   const getAllUsersHandler = async () => {
-    const response = await fetchAll("/users");
+    const response = await fetchAll("/api/users");
     dispatchGlobalAction({
       type: globalActionType.getAllUsers,
       payload: response,
@@ -54,7 +54,7 @@ const GeneralContextProvider = (props) => {
 
   const getUserHandler = async (userId) => {
     try {
-      const response = await fetchById("/users", userId);
+      const response = await fetchById("/api/users", userId);
       dispatchGlobalAction({
         type: globalActionType.getUserById,
         payload: response,
@@ -65,7 +65,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const addUserHandler = async (newUserData) => {
-    const response = await createData("/users", newUserData);
+    const response = await createData("/api/users", newUserData);
     dispatchGlobalAction({
       type: globalActionType.createUser,
       payload: response,
@@ -73,7 +73,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const updateUserHandler = async (newData) => {
-    const response = await updateData("/users", newData);
+    const response = await updateData("/api/users", newData);
     dispatchGlobalAction({
       type: globalActionType.updateUserData,
       payload: response,
@@ -92,7 +92,7 @@ const GeneralContextProvider = (props) => {
   // Pets Functions Handlers
   const getAllPetsHandler = async () => {
     try {
-      const response = await fetchAll("/pets");
+      const response = await fetchAll("/api/pets");
       dispatchGlobalAction({
         type: globalActionType.getAllPets,
         payload: response,
@@ -104,7 +104,7 @@ const GeneralContextProvider = (props) => {
 
   const getPetHandler = async (petId) => {
     try {
-      const response = await fetchById("/pets", petId);
+      const response = await fetchById("/api/pets", petId);
       dispatchGlobalAction({
         type: globalActionType.getPetById,
         payload: response,
@@ -115,7 +115,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const getPetRecords = async () => {
-    const response = await fetchAll("/records");
+    const response = await fetchAll("/api/records");
     dispatchGlobalAction({
       type: globalActionType.getAllPetRecords,
       payload: response,
@@ -123,7 +123,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const addPetHandler = async (newPetData) => {
-    const response = await createData("/pets", newPetData);
+    const response = await createData("/api/pets", newPetData);
     dispatchGlobalAction({
       type: globalActionType.createPet,
       payload: response,
@@ -131,7 +131,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const addRecordHandler = async (recordData) => {
-    const response = await createData("/records", recordData);
+    const response = await createData("/api/records", recordData);
     console.log(response);
     dispatchGlobalAction({
       type: globalActionType.createRecord,
@@ -155,7 +155,7 @@ const GeneralContextProvider = (props) => {
     confirmDelete().then(async (result) => {
       if (result.isConfirmed) {
         feedbackAlert(`${name}`, `has been deleted.`, "success");
-        const response = await deleteDataById("/pets", id);
+        const response = await deleteDataById("/api/pets", id);
         dispatchGlobalAction({
           type: globalActionType.removePet,
           payload: response,
@@ -168,7 +168,7 @@ const GeneralContextProvider = (props) => {
     confirmDelete().then(async (result) => {
       if (result.isConfirmed) {
         feedbackAlert(`Record ${record}`, `has been deleted.`, "success");
-        const response = await deleteDataById("/records", id);
+        const response = await deleteDataById("/api/records", id);
         dispatchGlobalAction({
           type: globalActionType.removeRecord,
           payload: response,
@@ -178,7 +178,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const getAllAppointmentsHandler = async () => {
-    const response = await fetchAll("/appointments");
+    const response = await fetchAll("/api/appointments");
     dispatchGlobalAction({
       type: globalActionType.getAllAppointments,
       payload: response,
@@ -186,7 +186,7 @@ const GeneralContextProvider = (props) => {
   };
 
   const addAppointmentHandler = async (newAppointmentData) => {
-    const response = await createData("/appointments", newAppointmentData);
+    const response = await createData("/api/appointments", newAppointmentData);
     dispatchGlobalAction({
       type: globalActionType.createAppointment,
       payload: response,
@@ -201,7 +201,7 @@ const GeneralContextProvider = (props) => {
           `has been deleted.`,
           "success"
         );
-        const response = await deleteDataById("/appointments", id);
+        const response = await deleteDataById("/api/appointments", id);
         dispatchGlobalAction({
           type: globalActionType.removerAppointment,
           payload: response,
