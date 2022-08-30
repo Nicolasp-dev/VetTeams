@@ -1,5 +1,5 @@
 import Pet from "../../../models/Pets";
-import dbConnection from "../../../services/dbConnection";
+import dbConnection from "../../../lib/dbConnection";
 
 dbConnection();
 

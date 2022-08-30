@@ -1,5 +1,5 @@
 import User from "../../../models/User";
-import dbConnection from "../../../services/dbConnection";
+import dbConnection from "../../../lib/dbConnection";
 
 dbConnection();
 

@@ -1,5 +1,5 @@
 import Record from "../../../models/Record";
-import dbConnection from "../../../services/dbConnection";
+import dbConnection from "../../../lib/dbConnection";
 
 dbConnection();
 

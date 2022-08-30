@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "http://localhost:3000/api",
-  // baseURL: "http://localhost:3006/",
+  baseURL: "https://vet-teams-d68xfefa8-nicolasp-dev.vercel.app/",
+  // baseURL: "http://localhost:3000/api",
   // baseURL: "http://3.139.109.107",
 });
