@@ -11,8 +11,6 @@ import { useAuth } from "../../contexts/AuthCtx";
 // ----------------------------------------------------------------------
 
 const Login = () => {
-  const { currentUser } = useAuth();
-  console.log(currentUser);
   return (
     <section className="h-[100vh] w-[100vw] overflow-hidden flex font-inter">
       <Link href="/">
