@@ -6,8 +6,10 @@ import UserFinder from "./UserFinder";
 import Navigation from "../Layout/Navigation";
 import Paginate from "../Paginate/Paginate";
 import UserCard from "./UserCard";
+import PropagateLoader from "react-spinners/PropagateLoader";
 
 const UserComponent = () => {
+  const [loading, setLoading] = useState(true);
   const { usersCtx, searchValue, searchResults, width, getWidthHandler } =
     useContext(GeneralContext);
 
@@ -32,7 +34,9 @@ const UserComponent = () => {
   };
 
   useEffect(() => {
+    setLoading(true);
     getAllUsersHandler();
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -81,13 +85,24 @@ const UserComponent = () => {
           </div>
           {/* USERS GRID */}
           <div className=" grid lg:grid-cols-2 lg:grid-rows-5 gap-2">
-            <UserCard
-              users={
-                searchValue.length < 1
-                  ? currentCards
-                  : searchResults.slice(indexOfFirstCard, indexOfLastCard)
-              }
-            />
+            {/* <ClipLoader color={"#000"} loading={loading} size={150} /> */}
+            {loading ? (
+              <div className="w-full h-[50vh] flex justify-center items-center">
+                <PropagateLoader
+                  color={"#166060"}
+                  loading={loading}
+                  size={20}
+                />
+              </div>
+            ) : (
+              <UserCard
+                users={
+                  searchValue.length < 1
+                    ? currentCards
+                    : searchResults.slice(indexOfFirstCard, indexOfLastCard)
+                }
+              />
+            )}
           </div>
           {/* PAGINATION */}
           <div>

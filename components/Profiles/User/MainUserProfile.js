@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Dialog, Transition } from "@headlessui/react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/css";
+import BounceLoader from "react-spinners/BounceLoader";
 // Components
 import Navigation from "../../Layout/Navigation";
 import PetsForm from "../Pet/PetsForm";
@@ -17,6 +18,7 @@ import UserData from "./UserData";
 // ----------------------------------------------------------------------------------------
 
 const MainProfile = () => {
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
   const [cardsPerPage, setCardsPerPage] = useState();
   const [modal, setModal] = useState(false);
@@ -42,11 +44,10 @@ const MainProfile = () => {
   }, []);
 
   useEffect(() => {
+    setLoading(true);
     getUserHandler(router.query.userId);
-  }, []);
-
-  useEffect(() => {
     getAllPetsHandler();
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -76,36 +77,44 @@ const MainProfile = () => {
   };
 
   return (
-    <motion.div
-      variants={variants}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      transition={{ type: "linear" }}
-    >
+    <>
       <Navigation />
       <section className="grid grid-cols-12 grid-rows-mobileAuto sm:grid-rows-[repeat(10,_minmax(10vh,_10vh))] font-inter h-full w-full">
-        <div className="col-start-1 col-end-13 sm:col-start-3 sm:col-end-12 sm:row-start-2 sm:row-end-10 pt-[6rem] sm:pt-0">
-          {/* USER__DETAILS__CONTAINER */}
-          <UserData user={user} toggleModal={toggleModal} />
-
-          {/* PETS CARDS CONTAINER */}
-          <Splide
-            options={{ perPage: `${cardsPerPage}`, speed: 1000 }}
-            className="px-[2rem]"
+        {loading ? (
+          <div className="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
+            <BounceLoader color={"#166060"} loading={loading} size={250} />
+            <p className="mt-10 text-3xl text-mid-green">. . . Loading . . .</p>
+          </div>
+        ) : (
+          <motion.div
+            className="col-start-1 col-end-13 sm:col-start-3 sm:col-end-12 sm:row-start-2 sm:row-end-10 pt-[6rem] sm:pt-0"
+            variants={variants}
+            initial="hidden"
+            animate="enter"
+            exit="exit"
+            transition={{ type: "linear" }}
           >
-            {pets?.map((pet) => {
-              return (
-                <SplideSlide
-                  key={pet._id}
-                  className="w-full h-[20rem] flex flex-wrap sm:flex-nowrap justify-center items-center gap-8 sm:mt-[5rem] "
-                >
-                  <PetCard pet={pet} closeModal={closeModal} />
-                </SplideSlide>
-              );
-            })}
-          </Splide>
-        </div>
+            {/* USER__DETAILS__CONTAINER */}
+            <UserData user={user} toggleModal={toggleModal} />
+
+            {/* PETS CARDS CONTAINER */}
+            <Splide
+              options={{ perPage: `${cardsPerPage}`, speed: 1000 }}
+              className="px-[2rem]"
+            >
+              {pets?.map((pet) => {
+                return (
+                  <SplideSlide
+                    key={pet._id}
+                    className="w-full h-[20rem] flex flex-wrap sm:flex-nowrap justify-center items-center gap-8 sm:mt-[5rem] "
+                  >
+                    <PetCard pet={pet} closeModal={closeModal} />
+                  </SplideSlide>
+                );
+              })}
+            </Splide>
+          </motion.div>
+        )}
 
         {/* ADD NEW PET MODAL */}
         <Transition appear show={modal} as={Fragment}>
@@ -155,7 +164,7 @@ const MainProfile = () => {
           </Dialog>
         </Transition>
       </section>
-    </motion.div>
+    </>
   );
 };
 
