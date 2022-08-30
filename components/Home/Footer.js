@@ -9,7 +9,7 @@ import { IoPawSharp, IoLocationSharp } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="relative bottom-[-6rem] col-start-1 col-end-13  md:mt-[15rem] lg:mt-10 row-start-7 font-inter">
+    <footer className="relative bottom-[-6rem] col-start-1 col-end-13 md:mt-[15rem] lg:mt-10 row-start-7 font-inter mt-12">
       <div className="bg-mid-green flex flex-wrap md:grid md:grid-cols-11 text-white px-2 py-[3rem] gap-5 ">
         {/* Contact__&__Location__Container */}
         <div className="col-start-2 col-end-5 px-5 mt-2 ">

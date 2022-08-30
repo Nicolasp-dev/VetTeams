@@ -8,6 +8,3 @@ export default axios.create({
     "Access-Control-Allow-Methods": "GET, PUT, POST, DELETE, OPTIONS",
   },
 });
-// baseURL: "http://localhost:3000/api"
-
-// baseURL: "http://3.139.109.107",

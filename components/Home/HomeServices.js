@@ -65,14 +65,12 @@ const services = [
 
 const HomeServices = () => {
   return (
-    <div className="col-start-1 col-end-13 row-start-5 row-end-7 2xl:row-start-5 2xl:row-end-7 lg:col-start-2 lg:col-end-12 font-inter ">
+    <div className="col-start-1 col-end-13 row-start-5 row-end-7 2xl:row-start-5 2xl:row-end-7 lg:col-start-2 lg:col-end-12 font-inter pt-[4rem]">
       {/* Slider__Container */}
       <Splide
         options={{
           type: "fade",
           rewind: true,
-
-          // focus: "center",
           arrows: false,
         }}
         aria-label="My Favorite services"

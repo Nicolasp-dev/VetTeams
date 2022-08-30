@@ -4,6 +4,7 @@ import { GeneralContext } from "../../contexts/GeneralContext";
 // Next Feature
 import Link from "next/link";
 // 3rd party libraries
+import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import { FaHome, FaBars, FaTimes, FaClipboardList } from "react-icons/fa";
 import { AiFillSchedule, AiOutlinePoweroff } from "react-icons/ai";
@@ -12,15 +13,18 @@ import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
 // Components
 import PathCategory from "./PathCategory";
-import { useAuth } from "../../contexts/AuthCtx";
 
 // --------------------------------------------------------------- //
+
+const mobileVariant = {
+  open: { y: 0, transition: { duration: 0.5 } },
+  close: { y: "-100vh" },
+};
 
 function Navigation() {
   const { logout } = useContext(GeneralContext);
   const [showSidebar, setShowSidebar] = useState(false);
   const [showMobileIcon, setShowMobileIcon] = useState(false);
-  const { fireLogout } = useAuth();
 
   const showSidebarHandler = () => setShowSidebar(!showSidebar);
   const showMobileMenuHandler = () => setShowMobileIcon(!showMobileIcon);
@@ -138,12 +142,14 @@ function Navigation() {
         </div>
 
         {/* Mobile Menu */}
-        <div
+        <motion.div
           className={
             !showMobileIcon
               ? "hidden"
               : "absolute top-0 left-0 w-full h-[50rem] bg-gradient-to-t from-dark-green to-[#0d5c5c] flex flex-col py-7 items-center"
           }
+          variants={mobileVariant}
+          animate={showMobileIcon ? "open" : "close"}
         >
           {/* Mobile Header */}
           <div className="flex justify-center items-center w-[80%] p-9 border-b-[1px] border-white">
@@ -217,7 +223,7 @@ function Navigation() {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
       </IconContext.Provider>
     </div>
   );

@@ -141,7 +141,7 @@ const GeneralContextProvider = (props) => {
 
   const updatePetHandler = async (newPetData) => {
     try {
-      const response = await updateData("pets", newPetData);
+      const response = await updateData("/api/pets", newPetData);
       dispatchGlobalAction({
         type: globalActionType.updatePetData,
         payload: response,
