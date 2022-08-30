@@ -2,14 +2,35 @@
 _Software que ofrece servicios básicos para la gestión de una veterinaria_
 
 Teams Veterinary Clinic es un software desarrollado como proyecto final para el bootcamp de JavaScript ofrecido por TEAM International Education.
-Con este desarrollo se pretende aplicar la funcionalidad CRUD básica para la gestión y administración de datos necesarias para un página web veterinaria. 
+Con este desarrollo se pretende aplicar la funcionalidad **CRUD** básica para la gestión y administración de datos necesarias para un página web veterinaria. 
 
 **Landing Page**: Página principal donde se puede encontrar información acerca de la empresa, los servicios que se ofrecen a través de un slider y finalmente un footer con información adicional.
 
-**Welcome**: Contiene una barra de navegación lateral la cual ofrece un enlace a las siguientes interfaces:
-- **Users**: Interfaz donde se grafican los usuarios registrados en la base de datos. Los usuarios pueden ser filtrados a través de una barra buscadora. Se puede registrar un nuevo usuario o bien ir al perfil de los usuarios ya existentes.
-- **User Profile**: Interfaz donde se grafican los datos personales del usuario y las mascotas registradas en la base de datos.  La interfaz permite añadir mascotas nuevas y/o eliminar mascotas existentes o bien acceder al perfil de las mascotas registradas.
-- **Pet Profile**: Interfaz donde se gráfican los datos personales de la mascota y las historias clínicas registradas en la base de datos. La interfaz permite actualizar los datos de la mascota y añadir nuevas historias clinicas.
+- **Welcome**: 
+  -  Interfaz que contiene una barra de navegación lateral, la cual a su vez contiene los enlaces a las otras interfaces. 
+
+- **Users**: 
+  - Interfaz donde se grafican los usuarios registrados en la base de datos. 
+  - Funcionalidad:
+    - Barra buscadora que filtra datos entre los usuarios registrados.
+    - Crear un usuario,
+    - Acceder al perfil de los usuarios registrados.
+    
+- **User Profile**: 
+  - Interfaz donde se grafican los datos personales del usuario y las mascotas registradas en la base de datos. 
+  - Funcionalidad: 
+    - Actualizar los datos del usuario.
+    - Acceder al perfil de las mascotas registradas.
+    - Crear mascotas nuevas.
+    - Eliminar mascotas existentes.
+  
+- **Pet Profile**: 
+  - Interfaz donde se gráfican los datos personales de la mascota y las historias clínicas registradas en la base de datos. 
+  - Funcionalidad:
+    - Volver al perfil del usuario. 
+    - Actualizar los datos de la mascota.
+    - Crear nuevas historias clinicas.
+    - Eliminar Historias clínicas existentes.
 
 ## Comenzando 🚀
 
@@ -20,6 +41,7 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 ## Diseño realizado en Figma
 Mockup del proyecto diseñado en Figma, contiene el flujo de interfaces según la interacción del usuario.
+
 https://www.figma.com/file/AGuWBgF3gqqoaRskoB4lnu/Vet-Teams
 
 ### Instalación 🔧
