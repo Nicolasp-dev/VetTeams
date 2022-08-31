@@ -1,7 +1,36 @@
-<<<<<<< HEAD
-# Software que ofrece servicios de administracion y gestion de una veterinario
+# Vet-teams 
+_Software que ofrece servicios básicos para la gestión de una veterinaria_
 
-_Teams Veterinary Clinic es un software de gestión para centros veterinarios, muy completo, robusto y también muy fácil de usar, que permite gestionar las tareas y recursos de manera rápida y eficiente, facilitando la coordinación del equipo de trabajo, logrando un servicio de alta calidad._
+Teams Veterinary Clinic es un software desarrollado como proyecto final para el bootcamp de JavaScript ofrecido por TEAM International Education.
+Con este desarrollo se pretende aplicar la funcionalidad **CRUD** básica para la gestión y administración de datos necesarias para un página web veterinaria. 
+
+**Landing Page**: Página principal donde se puede encontrar información acerca de la empresa, los servicios que se ofrecen a través de un slider y finalmente un footer con información adicional.
+
+- **Welcome**: 
+  -  Interfaz que contiene una barra de navegación lateral, la cual a su vez contiene los enlaces a las otras interfaces. 
+
+- **Users**: 
+  - Interfaz donde se grafican los usuarios registrados en la base de datos. 
+  - Funcionalidad:
+    - Barra buscadora que filtra datos entre los usuarios registrados.
+    - Crear un usuario,
+    - Acceder al perfil de los usuarios registrados.
+    
+- **User Profile**: 
+  - Interfaz donde se grafican los datos personales del usuario y las mascotas registradas en la base de datos. 
+  - Funcionalidad: 
+    - Actualizar los datos del usuario.
+    - Acceder al perfil de las mascotas registradas.
+    - Crear mascotas nuevas.
+    - Eliminar mascotas existentes.
+  
+- **Pet Profile**: 
+  - Interfaz donde se gráfican los datos personales de la mascota y las historias clínicas registradas en la base de datos. 
+  - Funcionalidad:
+    - Volver al perfil del usuario. 
+    - Actualizar los datos de la mascota.
+    - Crear nuevas historias clinicas.
+    - Eliminar Historias clínicas existentes.
 
 ## Comenzando 🚀
 
@@ -11,14 +40,9 @@ Mira **Deployment** para conocer como desplegar el proyecto.
 
 
 ## Diseño realizado en Figma
+Mockup del proyecto diseñado en Figma, contiene el flujo de interfaces según la interacción del usuario.
 
 https://www.figma.com/file/AGuWBgF3gqqoaRskoB4lnu/Vet-Teams
-
-
-### Pre-requisitos 📋
-
-_Para desplegar a producion es necesario que poseas un equipo de computo con bases de datos en Postgres sql, si quieres usar el modo developer debes usar como base de datos MySQL, teniendo eso debes intalar nodejs ultima version en tu sistema operativo ya sea linux, macOS o Windows, teneindo el entorno del servidor listo y con el proyecto ya descargado debes realizar lo siguiente_
-
 
 ### Instalación 🔧
 
@@ -55,28 +79,26 @@ _Rutas para consumir la aplicacion_
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+_En desarollo_
 
 
 ## Construido con 🛠️
 
 _Herramientas que utilizadas para crear tu proyecto_
 
-* [Sequelizer ORM](https://sequelize.org/)
-* [Node JS](https://nodejs.org/es/)
-* [MySQL](https://dev.mysql.com/doc/)
-* [PostgreSQL](https://dev.postgresql.com/en/book/)
+* [NextJS](https://nextjs.org/)
+* [Axios](https://axios-http.com/)
+* [Mongoose](https://mongoosejs.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [TailwindCSS](https://tailwindcss.com/)
+* [Framer-Motion](https://www.framer.com/motion/)
+* [React Hook Form](https://react-hook-form.com/)
+* [Splide](https://splidejs.com/)
 
-
-## Versionado 📌
 
 ## Autores ✒️
-
-_Personas que ayudaron a levantar el proyecto desde sus inicios_
-
+* **Nicolas** - *Fullstack Developer* 
 * **Gabriel** - *Backend Developer* 
-* **Nicolas** - *Frontend Developer* 
-* **Luis** - *Testing* 
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
@@ -86,19 +108,7 @@ Este proyecto está bajo la Licencia gratuita para que sea mejorado o actualizad
 
 ## Gratitud 🎁
 
-* Gracias a los compañero y profesores los cuales nos brindaron orientacion para culminar este proyecto 📢
-* A los compañeros que cada clase aportaron de sus conocimientos.
+* Gracias a Top Gun de TEAM International y los docentes que compartieron su tiempo y conocimiento para el aprendizaje.
 
 ---
-Gracias a Top Gun de team international por la oportunidad 😊
 
-
-=======
-Tienda y Servicios para Mascotas
-
-Test
-npm test -- --coverage --watchAll
-
-test report
-open coverage/lcov-report/index.html
->>>>>>> develop
