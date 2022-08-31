@@ -9,7 +9,7 @@ import UserCard from "./UserCard";
 import PropagateLoader from "react-spinners/PropagateLoader";
 
 const UserComponent = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const { usersCtx, searchValue, searchResults, width, getWidthHandler } =
     useContext(GeneralContext);
 
@@ -36,7 +36,13 @@ const UserComponent = () => {
   useEffect(() => {
     setLoading(true);
     getAllUsersHandler();
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout();
+    };
   }, []);
 
   useEffect(() => {
@@ -84,10 +90,9 @@ const UserComponent = () => {
             <UserFinder users={users} />
           </div>
           {/* USERS GRID */}
-          <div className=" grid lg:grid-cols-2 lg:grid-rows-5 gap-2">
-            {/* <ClipLoader color={"#000"} loading={loading} size={150} /> */}
+          <div className=" grid lg:grid-cols-2 lg:grid-rows-5 gap-2 w-full">
             {loading ? (
-              <div className="w-full h-[50vh] flex justify-center items-center">
+              <div className="flex justify-center items-center w-[75vw] mt-[5rem]">
                 <PropagateLoader
                   color={"#166060"}
                   loading={loading}
@@ -104,6 +109,7 @@ const UserComponent = () => {
               />
             )}
           </div>
+
           {/* PAGINATION */}
           <div>
             <Paginate
